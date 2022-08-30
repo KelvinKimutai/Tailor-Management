@@ -1,0 +1,257 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100vh;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+}
+
+.main {
+  display: flex;
+  height: 100vh;
+}
+.sidebar {
+  width: 180px;
+  flex-shrink: 0;
+  background-color: rgb(17, 17, 17);
+  height: 100%;
+  overflow: auto;
+}
+.container {
+  flex-grow: 1;
+  background-color: rgb(69, 67, 75);
+  padding: 2em;
+  background-image: url('../public/banner.png');
+  background-size: cover;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  opacity: 1;
+}
+.containerA{
+  flex-grow: 1;
+  background-color: rgb(28, 20, 53);
+  padding: 2em;
+  background-size: cover;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  opacity: .8;
+  height: auto;
+  width: fit-content;
+}
+.title{
+  font-size: 2em;
+}
+.info {
+  font-size: 1em;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  margin: 1.5em;
+  
+}
+.btn {
+  margin: 0 auto;
+  border: none;
+  outline: none;
+  padding: .75em 1em;
+  font-size: 1em;
+  letter-spacing: 1px;
+  box-shadow: 0 3px 5px rgb(43, 226, 119);
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 3px;
+  background-color: rgb(4, 99, 28);
+  color: aliceblue;
+
+}
+
+.sidebar-item {
+  padding: .75em 1em;
+  display: block;
+  transition: background-color .15s;
+  border-radius: 5px;
+}
+
+.sidebar-item:hover{
+  background-color: rgba(255, 255, 255, .1);
+}
+
+.sidebar-title {
+  display: flex;
+  font-size: 1em;
+  justify-content: space-between;
+}
+
+.sidebar-title span i{
+  display: inline-block;
+  width: 1.5em;
+  color: blueviolet;
+ }
+
+ .sidebar-title .toggle-btn {
+  cursor: pointer;   
+  transition: transform .3s;
+ }
+ .sidebar-item.open > .sidebar-title .toggle-btn{
+   transform: rotate(180deg);
+ }
+.sidebar-content {
+  padding-top: .25em;
+  height: 0;
+  overflow: hidden;
+  color: rgb(15, 119, 5);
+}
+.sidebar-item.open > .sidebar-content{
+  height: auto;
+
+}
+
+.sidebar-item plain{
+color: white;
+text-decoration: none;
+}
+.sidebar-item plain:hover{
+  text-decoration: underline;
+}
+.sidebar-item plain i{
+  display: inline-block;
+  width: 1.7em;
+}
+
+img {
+  border-radius: 90%;
+  height: 45px;
+  position: relative;
+}
+.logos{
+  padding-left: 25px;
+  padding-top: 3px;
+  background-color: rgb(87, 4, 76);
+  border-radius: 30px;
+  padding-bottom: 3px;
+}
+.p {
+  display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    line-height: 1.7;
+    margin-top: 0;
+  
+}
+.mini-stat .mini-stat-label{
+  position: absolute;
+    right: 0;
+    top: 18px;
+    padding: 2px 10px 2px 32px;
+    -webkit-clip-path: polygon(100% 0,100% 50%,100% 100%,0 100%,24% 50%,6% 0);
+    clip-path: polygon(100% 0,100% 50%,100% 100%,0 100%,24% 50%,6% 0);
+}
+.font-size-16 {
+  font-size: 16px!important;
+  text-transform: uppercase!important;
+  
+}
+h5 {
+  display: block;
+  font-size: 0.83em;
+  margin-block-start: 1.67em;
+  margin-block-end: 1.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  font-size: 1.09375rem;
+  font-family: Sarabun,sans-serif;
+  font-weight: 600;
+
+}
+
+.card-body {
+  --bs-bg-opacity: 0;
+}
+.text-white-50 {
+  --bs-text-opacity: 1;
+  color: #ffffff !important;
+}
+.Paper{ 
+  padding: 20;
+  height: '70vh';
+  width: 300;
+  margin: "20px auto";
+  opacity: 100;
+  color: red;
+  display: block;
+}
+table {
+  border: 2px solid rgb(0, 0, 0);
+  width: 1000px;
+  height: 200px;
+}
+  
+th {
+  border-bottom: 1px solid rgb(8, 5, 63);
+  border-left: 1px rgb(128, 0, 75);
+  padding-top: 3px;
+  text-align: center;
+}
+.btn1 {
+  font-size: 14px;
+  color: blue;
+  text-transform: uppercase!important;
+  
+}
+.table{
+  opacity: 1;
+}
+.tr1 {
+  background-color: grey;
+  padding-top: 10px;
+}
+
+.tr{
+  opacity: 1;
+  background-color: rgb(106, 127, 243);
+  color: white;
+  border-bottom: red;
+  padding: 0px;
+  text-align: center;
+  height: 50px;
+  
+}
+.btn2{
+font-size: 12px;
+background-color: blue;
+}
+
+
+
+
+
+
+
+/* body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} */
